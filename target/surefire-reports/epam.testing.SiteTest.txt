@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: epam.testing.SiteTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.301 s <<< FAILURE! - in epam.testing.SiteTest
+epam.testing.SiteTest  Time elapsed: 2.3 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: Microsoft Edge failed to start: crashed.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from msedge location C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe is no longer running, so msedgedriver is assuming that msedge has crashed.)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANDREY', ip: '10.208.126.117', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: EdgeDriver
+remote stacktrace: 	GetHandleVerifier [0x00457A53+230547]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00333C11+400897]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00146070+3568]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0016C6D8+53976]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00167CCC+35020]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00198763+234339]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0019805C+232540]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x0018EB86+194438]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00172533+78131]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00171515+74005]
+	Microsoft::Applications::Events::GUID_t::GUID_t [0x00171F3D+76605]
+	GetHandleVerifier [0x0054991C+1221468]
+	Microsoft::Applications::Events::FromJSON [0x0061A542+132370]
+	Microsoft::Applications::Events::FromJSON [0x00619EC7+130711]
+	Microsoft::Applications::Events::FromJSON [0x0060ED30+85248]
+	Microsoft::Applications::Events::FromJSON [0x0061AF1B+134891]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00346ADF+478415]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x0033C5F8+436200]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x0033C76B+436571]
+	Microsoft::Applications::Events::time_ticks_t::time_ticks_t [0x00326DF4+348132]
+	BaseThreadInitThunk [0x76C3FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774D7C5E+286]
+	RtlGetAppContainerNamedObjectPath [0x774D7C2E+238]
+	(No symbol) [0x00000000]
+
+	at epam.testing.SiteTest.init(SiteTest.java:18)
+
+epam.testing.SiteTest  Time elapsed: 2.301 s  <<< ERROR!
+java.lang.NullPointerException
+	at epam.testing.SiteTest.close(SiteTest.java:48)
+
